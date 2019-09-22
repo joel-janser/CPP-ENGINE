@@ -1,5 +1,5 @@
 # CPP-ENGINE
-C++-Engine is an easy-to-understand rendering engine, which is not yet finished.
+C++-Engine is an easy-to-understand rendering engine, which is not yet finished. This is published by Joel for education.
 
 # Rending model
 
@@ -17,4 +17,10 @@ When a box has a natural distance around itself where no other boxes are placed,
 
 The CSS Box Model rendering needs too much adjustsments for defining margin and padding to fix the issue with the natural distance. Much of todays CSS code is just fixing this issue and much of the design problems on websites base on this issue. 
 
-Of course HTML has a complex ecosystem and Google Chrome around 50 million lines of code. This is a complex environment which has too much features for fail-safe systems and industry machines. The idea is to keep the lines of code for the software under 10'000 lines, with an easy to implement interface which can render text, colored boxes, images, etc. (for example to call SDL/OpenGL/Vulkan/Software-Renderer API's to use the graphics-card for rendering).
+Of course HTML has a complex ecosystem and Google Chrome around 50 million lines of code. This is a complex environment which has too much features for fail-safe systems and industry machines. The idea is to keep the lines of code for the software under 10'000 lines, with an easy to implement interface which can render text, colored boxes, images, etc. (for example to call SDL/OpenGL/Vulkan/Software-Renderer API's to use the graphics-card for rendering or to keep the library easy to check).
+
+The idea is to create a complete ecosystem for building low-energy-use applications, for products which do not have much RAM, hard-drive space, processor power, etc. Like colored paper ink display (3-color, grayscale, more colors), which do not need a fast processor, because the refresh rate of the screen is much lower than on other displays. This means that the time for painting a frame is around 1 second. 
+
+There is unfortunately (not yet) a standard for 2D rendering in C++. 
+
+To create user interfaces for industry machines, low-power-products, etc. normally requires programming skills. 
