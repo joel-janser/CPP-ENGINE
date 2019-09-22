@@ -9,7 +9,7 @@ When rendering designs, the MAX-function ensures that only intended distances by
 
 The combination of the C++-Engine with the standardised software production would allow C++ developers to create their own visual 2D or 3D-components based on C++ with an easy-to-understand Rendering Engine, optimized for 2D rendering.
 
-# Why is the CSS Box Model not good for designers and programmers
+# Why not use HTML and the CSS-Box Model? 
 
 In the CSS Box Model the margin and padding used define numbers which define distances to points with no meaning. When two objects have natural distances, the nature would use this natural distance to a point with meaning and not an artificial point. When a graphic looks good (e.g. an icon) with a certain area around itself, it means that this area must be free from other boxes with this number and not this number + a maybe unkown number. And the uncertainty is because the designers do not know while define the component, what other components are used or introduced. 
 
@@ -17,4 +17,4 @@ When a box has a natural distance around itself where no other boxes are placed,
 
 The CSS Box Model rendering needs too much adjustsments for defining margin and padding to fix the issue with the natural distance. Much of todays CSS code is just fixing this issue and much of the design problems on websites base on this issue. 
 
-Of course HTML has a complex ecosystem and Google Chrome around 50 million lines of code. This is a complex environment which has too much features for fail-safe systems and industry machines. 
+Of course HTML has a complex ecosystem and Google Chrome around 50 million lines of code. This is a complex environment which has too much features for fail-safe systems and industry machines. The idea is to keep the lines of code for the software under 10'000 lines, with an easy to implement interface which can render text, colored boxes, images, etc. (for example to call SDL/OpenGL/Vulkan/Software-Renderer API's to use the graphics-card for rendering).
