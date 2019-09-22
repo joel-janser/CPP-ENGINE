@@ -23,6 +23,6 @@ Of course HTML has a complex ecosystem and Google Chrome around 50 million lines
 
 The idea is to create a complete ecosystem for building low-energy-use applications, for products which do not have much RAM, hard-drive space, processor power, etc. Like colored paper ink display (3-color, grayscale, more colors), which do not need a fast processor, because the refresh rate of the screen is much lower than on other displays. This means that the time for painting a frame is around 1 second. 
 
-There is unfortunately (not yet) a standard for 2D rendering in C++. 
+There is unfortunately (not yet) a standard for 2D rendering in C++, so the renderer will use SDL to render the graphics.
 
 To create user interfaces for industry machines, low-power-products, etc. normally requires programming skills and much time. The designer application, like the Resource Manger, has the environment to build JSON-files with a visual editor. 
