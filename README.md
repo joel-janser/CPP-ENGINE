@@ -94,6 +94,7 @@ e. g. ;
 
 </html>
 ```
+![alt text](rendering.png)
 
 The words "margin" and "padding" are not a natural language constructs, because the definition has no meaning to technical people, non-technical people and not even to designers. 
 
