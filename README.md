@@ -51,31 +51,49 @@ The idea is to use this for the following: Message-boxes, navigation, error mess
 The best CSS is always if you can convert the code into natural language sentences which make sense.
 
 e. g. ;
+```
+<html>
 
-<documentation>
-  <title>C++</title>
-  <subtitle>A C++-example</subtitle>
-  <text>Just a test</text>
-  <image></image>
-</documentation>
+<head>
+    <style type="text/css">
+        .documentation {
+            border: 1px solid red;
+            padding: 50px; // = 80px distance to title, 60 to subtitle and 55 to text
+            vs.
+            distance-to-subelements: 50px; // the red line has a 50 pixel distance to the subelements title, text, subtitle
+        }
+        
+        .documentation .title {
+            color: red;
+            margin: 30px; // = 40 pixel distance to subtitle and 80 pixel to documentation
+            vs.
+            distance: 30px; // = 30 pixel distance to subtitle
+        }
+        
+        .documentation .subtitle {
+            margin: 10px;
+            vs.
+            distance: 10px
+        }
+        
+        .documentation .text {
+            margin: 5px;
+            vs.
+            distance: 5px
+        }
+    </style>
+</head>
 
-.documentation {
-  padding: 10px; // All documentations have a padding of 10 pixel to the "invisible outer area of the title, subtitles, texts and other elements"
-  border: 1px solid green; // 
-}
+<body>``
+    <div class="documentation">
+        <div class="title">C++</div>
+        <div class="subtitle">A C++-example</div>
+        <div class="text">Just a test</div>
+    </div>
+</body>
 
-.documentation .title {
-  color: red; // "All titles within documentations have the color red"
-  margin: 10px; // "All titles within documentations have a margin of 10 Pixel"
-}
-
-.documentation .subtitle {
-  margin: 10px;
-}
-
-.documentation .text {
-  margin: 10px;
-}
+</html>
+```
 
 The words "margin" and "padding" are not a natural language constructs, because the definition has no meaning to technical people, non-technical people and not even to designers. 
 
