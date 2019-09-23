@@ -71,15 +71,15 @@ e. g. ;
         }
         
         .documentation .subtitle {
-            margin: 10px;
+            margin: 10px; // 40 pixel distance to title and 15 pixel to text
             vs.
-            distance: 10px
+            distance: 10px; // 10 pixel distance to text
         }
         
         .documentation .text {
-            margin: 5px;
+            margin: 5px; // 15 pixel distance to text
             vs.
-            distance: 5px
+            distance: 5px; // results in 10 pixel distance to subtitle 
         }
     </style>
 </head>
